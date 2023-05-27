@@ -12,10 +12,17 @@ As per the problem statement, requirement is to develop as self service data pla
     * CI/CD
  
 ![Alt text](./DataPlatform.png)
-** Img taken from https://www.btelligent.com/en/blog/the-lakehouse-approach-cloud-data-platform-on-aws/
+* Example aws services that can be used 
 
 
 ### Data Ingestion
+
+For deciding tool to select for data ingestion. It is important to carefully consider various parameters 
+
+1. Data Volume: The amount of data being ingested in terms of the size of the data, the number of records.
+2. Data Frequency: It is the frequency at which updated data is received. You can either do the near-real-time replication or go for the batch mode processing, where data is first stored in batches and then moved into the pipelines. 
+3. Data Velocity: Rate at which data will be received, ingested or processed
+4. Data Format: Format of data that needs to be stored, processed, ingested.
 
 *Real Time Data :*
 For data delivery in real time AWS services like Kinesis, Managed Service Kafka, Change Data Capture (CDC on database) that can again write to kinesis and open source tools like Apache Druid, Apache Streampipes can be used and for processing this data in real time either lambda or microservices can be used based on data cadence and data volume.

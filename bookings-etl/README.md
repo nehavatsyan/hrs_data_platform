@@ -6,10 +6,24 @@
 5.Install findspark by running    `pip install findspark`
 6. install jupyterlab on your system `pip install jupyterlab`
 7. Type `jupyter-lab` to open notebook's in a lab environment
-8. Head on to designation_bookings.ipynb file  and you can run all the cells to test code
+8. Head on to src/designation_bookings.ipynb file  and you can run all the cells.
+9. For running test cases head on to tests/test_designation_booking.ipynb and run all cells
 
 # Directory Structure 
 
-* designation_bookings.ipynb contains code to run the script
-* hotel_booking.csv has booking data
-* results folder contain parquet file that were generated as part of task, when you run the script  the new files will get added into root folder directory.
+```
+- assets
+    --hotel_bookings,csv
+- results
+    --travel_operator_booking
+- src
+    --booking_util.py
+    --designation_booking.ipynb
+- tests
+    --README.md
+    --test_data.py
+    --test_designation_booking.ipynb
+    --README.md
+- README.md
+
+```
