@@ -20,10 +20,8 @@
     --booking_util.py
     --designation_booking.ipynb
 - tests
-    --README.md
     --test_data.py
     --test_designation_booking.ipynb
-    --README.md
 - README.md
 
 ```
